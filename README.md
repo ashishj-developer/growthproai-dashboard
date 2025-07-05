@@ -4,7 +4,7 @@ This project is a **Mini Local Business SEO Dashboard**, built as part of the Gr
 
 ## 🌐 Live Demo
 
-- **Frontend (Vercel):** [https://growthproai-dashboard.vercel.app](https://growthproai-dashboard.vercel.app)
+- **Frontend (Vercel):** [https://growthproai-dashboard-tan.vercel.app/](https://growthproai-dashboard-tan.vercel.app/)
 - **Backend (Render):** [https://growthproai-dashboard-anv0.onrender.com](https://growthproai-dashboard-anv0.onrender.com)
 
 ---
