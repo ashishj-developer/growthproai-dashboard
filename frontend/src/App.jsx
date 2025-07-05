@@ -23,7 +23,8 @@ function App() {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/business-data", {
+      const url = `https://growthproai-dashboard-anv0.onrender.com/business-data`
+      const response = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -41,9 +42,8 @@ function App() {
 
   const regenerateHeadline = async () => {
     try {
-      const response = await fetch(
-        `http://localhost:3000/regenerate-headline?name=${form.businessName}&location=${form.location}`
-      );
+      const url = `https://growthproai-dashboard-anv0.onrender.com/regenerate-headline?name=${form.businessName}&location=${form.location}`
+      const response = await fetch(url);
       const result = await response.json();
       setData((prev) => ({ ...prev, headline: result.headline }));
       toast.success("Headline updated");
