@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BusinessForm from "./components/BusinessForm";
 import BusinessCard from "./components/BusinessCard";
-import "./app.css";
+import "./App.css";
 import { Toaster, toast } from "react-hot-toast";
 
 function App() {
