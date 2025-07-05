@@ -1,67 +1,82 @@
-# 🧠 GrowthProAI - Full Stack Intern Assignment
+# GrowthProAI — Full Stack Intern Assignment 🚀
 
-A responsive Local Business SEO Dashboard that simulates how small businesses might visualize their Google profile with a modern, animated UI.
+This project is a **Mini Local Business SEO Dashboard**, built as part of the GrowthProAI Full Stack Intern Assignment.
 
-Built using **React + Vite + Tailwind CSS** on the frontend and **Node.js + Express** on the backend.
+## 🌐 Live Demo
 
----
-
-## ✨ Features
-
-- 🔁 Flip card animation: switch between form and business info
-- 📍 Emoji avatar based on business type (☕ Café, 🍕 Pizza, etc.)
-- 🌐 Simulated Google rating, reviews & SEO headline
-- 💬 Toast notifications for feedback
-- 🎨 Glassmorphic card UI + responsive layout
-- ✅ Form validation + loading state
+- **Frontend (Vercel):** [https://growthproai-dashboard.vercel.app](https://growthproai-dashboard.vercel.app)
+- **Backend (Render):** [https://growthproai-dashboard-anv0.onrender.com](https://growthproai-dashboard-anv0.onrender.com)
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer     | Stack                         |
-|-----------|-------------------------------|
-| Frontend  | React, Vite, Tailwind CSS     |
-| Backend   | Node.js, Express              |
-| Styling   | Tailwind + Glassmorphism      |
-| UX        | Flip Animation + React Toast  |
+- **Frontend**: React + Vite + Tailwind CSS
+- **Backend**: Node.js + Express (No database)
+- **Hosting**: Vercel (frontend), Render (backend)
 
 ---
 
-## 🔧 Local Setup
+## 💻 Features
 
-### ▶️ Frontend (Vite)
+- ✅ Form to enter Business Name & Location
+- ✅ Stylish animated Flip Card UI with:
+  - Google Rating (simulated)
+  - Total Reviews (simulated)
+  - AI-generated SEO headline
+- ✅ Button to Regenerate SEO headline
+- ✅ Client-side Validation with Toasts
+- ✅ Glassmorphism Card UI
+- ✅ Static Map Placeholder (city-themed)
+- ✅ Fully responsive & mobile-friendly
 
-```bash
-cd frontend
-npm install
-npm run dev
+---
 
-Open: http://localhost:5173
+## 🧪 API Endpoints (Backend)
 
-▶️ Backend (Express)
+### `POST /business-data`
+
+**Request:**
+```json
+{ "name": "Cake & Co", "location": "Mumbai" }
+
+Response:
+
+{
+  "rating": 4.3,
+  "reviews": 127,
+  "headline": "Why Cake & Co is Mumbai's Sweetest Spot in 2025"
+}
+
+Local Development Setup
+🔧 Backend
 bash
 Copy
 Edit
 cd backend
 npm install
 node index.js
-Runs on: http://localhost:3000
+Available at http://localhost:3000
 
-🧪 API Endpoints
-POST /business-data
-json
+💻 Frontend
+bash
 Copy
 Edit
-Request:
-{
-  "name": "Cake & Co",
-  "location": "Mumbai"
-}
+cd frontend
+npm install
+npm run dev
+Available at http://localhost:5173
 
-Response:
-{
-  "rating": 4.3,
-  "reviews": 127,
-  "headline": "Why Cake & Co is Mumbai's Sweetest Spot in 2025"
-}
+You can configure the backend URL using .env file with:
+VITE_API_BASE=http://localhost:3000 (or your Render URL)
+
+📤 Submission
+GitHub Repo: https://github.com/ashishj-developer/growthproai-dashboard
+
+Frontend: Live on Vercel
+
+Backend: Live on Render
+
+🙌 Built by
+Ashish Raj — aspiring full stack developer
+GitHub: @ashishj-developer
